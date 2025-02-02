@@ -42,7 +42,7 @@ class DeletePostView(DeleteView):
 class AddCategoryView(CreateView):
     model = Category
     form_class = CategoryForm
-    template_name = 'category.html'
+    template_name = 'add_category.html'
 
 
 

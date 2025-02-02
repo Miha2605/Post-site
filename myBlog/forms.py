@@ -9,7 +9,6 @@ class PostForm(forms.ModelForm):
     class Meta:
         model = Post
         fields = '__all__'
-        # categorys = [('news', 'news'),('memes', 'memes'),('sport', 'sport'),('music', 'music'),('politic', 'politic')]
         widgets = {
             'title': forms.TextInput(attrs = {"class":"form-control"}),
             'author': forms.Select(attrs={"class": "form-control"}),
