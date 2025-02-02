@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail Post</title>
+</head>
+<body>
+
+{% extends 'base.html' %}
+{% block content %}
+
+
+ <h1>
+   Post {{ post.title }}
+ </h1>
+<h2>
+  by: {{ post.author }}
+</h2>
+<p>
+  {{ post.text }}
+</p>
+<a href="{% url 'home' %}" type="button" class="btn btn-secondary">back</a>
+<a href="{% url 'update_post' post.pk %}" type="button" class="btn btn-secondary">edit</a>
+<a href="{% url 'delete_post' post.pk %}" type="button" class="btn btn-secondary">delete</a>
+
+
+
+
+
+{% endblock %}
+</body>
+</html>
