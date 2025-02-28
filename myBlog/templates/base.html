@@ -6,8 +6,8 @@
     <title>My Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
-  <body>
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+  <body class="bg-dark text-light">
+  <nav style="background-color:#953fe0" class="navbar navbar-expand-lg  navbar-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="{% url 'home' %}">My blog</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
@@ -16,10 +16,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'add_post' %}">add post</a>
+          <a class="navbar-brand" href="{% url 'add_post' %}">Add post</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'add_category' %}">add category</a>
+          <a class="navbar-brand" href="{% url 'add_category' %}">Add category</a>
         </li>
       </ul>
     </div>
